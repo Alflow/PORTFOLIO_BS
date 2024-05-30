@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 769px) {
-    .logo-wrapper{
+    .gymhubDocs .logo-wrapper{
         display: none !important;
     }
   }
