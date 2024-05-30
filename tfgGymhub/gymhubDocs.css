@@ -1,7 +1,22 @@
-
+.gymhubDocs h2{
+    color: #FFBA08;
+}
 #entidades .card{
     height: 100%;
 }
 #entidades .card-header{
     font-weight: 600;
+}
+.gymhubDocs .navbar .nav-link.active {
+    color: #FFBA08 !important;
+}
+.gymhubDocs .gymhub-logo{
+    border: none;
+}
+.gymhubDocs nav{
+    background: unset;
+    background-color: black !important;
+}
+.gymhubDocs .nav-link:hover{
+    color: #b88609;
 }
