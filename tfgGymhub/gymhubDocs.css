@@ -20,3 +20,10 @@
 .gymhubDocs .nav-link:hover{
     color: #b88609;
 }
+
+@media (max-width: 769px) {
+    .logo-wrapper{
+        display: none !important;
+    }
+  }
+
