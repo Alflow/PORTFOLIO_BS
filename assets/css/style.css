@@ -2,10 +2,11 @@
 :root {
   --color-body: #b6cbce;
   --color-heading: #eef3db;
-  --color-base: #CF0A0A;
-  --color-base2: #000000;
-  --color-brand: #CF0A0A;
-  --color-brand2: #ffffff;  
+  --color-base: #363333;
+  --color-base2: #272121;
+  --color-base2: #0a0707;
+  --color-brand: #e16428;
+  --color-brand2: #ffffff;
   --sidebar-width: 240px;
   --font-base: "Bai Jamjuree";
 }
@@ -14,6 +15,10 @@ body {
   background-color: var(--color-base2);
   color: var(--color-body);
   font-family: var(--font-base), sans-serif;
+  /* test */
+  background-color: #0a0707;
+background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 h1,
@@ -25,11 +30,18 @@ h6 {
   color: var(--color-heading);
   font-weight: 700;
 }
+:not(.person) h5{
+  color: var(--color-brand);
+}
+
+.person p{
+  
+  color: var(--color-brand);
+}
 a {
   text-decoration: none;
   color: var(--color-body);
   transition: all 0.4s ease;
-  
 }
 
 a:hover {
@@ -40,7 +52,7 @@ img {
   width: 100%;
 }
 .text-brand {
-  color: var(--color-b);
+  color: var(--color-brand);
 }
 .bg-base {
   background-color: var(--color-base);
@@ -56,15 +68,13 @@ img {
   border-bottom: 2px solid rgba(255, 255, 255, 0.439);
 }
 
-.shadow-effect{
-  transition:  all 0.5s;
-
+.shadow-effect {
+  transition: all 0.5s;
 }
-.shadow-effect:hover{
+.shadow-effect:hover {
   box-shadow: 0 0 0 2px var(--color-body);
-  
 }
-.iconbox{
+.iconbox {
   width: 60px;
   height: 60px;
   display: flex;
@@ -86,16 +96,13 @@ img {
 }
 
 .navbar .nav-link:hover {
-  color: var(--color-base);
+  color: var(--color-brand);
 }
 
-
-.navbar .nav-link.active{
-  color: var(--color-base);
+.navbar .nav-link.active {
+  color: #e16428;
 }
 /* ----------------- */
-
-
 
 @media (min-width: 992px) {
   .navbar {
@@ -107,7 +114,7 @@ img {
     background-position: center;
   }
   .navbar-brand img {
-    border: 8px solid var(--color-brand);
+    border: 3px solid var(--color-brand);
   }
   /* CONTENT WRAPPER */
   #content-wrapper {
@@ -115,57 +122,60 @@ img {
       --sidebar-width
     ); /* Comienza desde la anchura del nav   */
   }
-
 }
 
 /* BTN */
-.btn{
-padding: 12px 28px;
-font-weight: 700;
+.btn {
+  padding: 12px 28px;
+  font-weight: 700;
 }
 
-.btn-brand{
-    background-color: var(--color-brand);
-    border-color: var(--color-brand);
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
 }
-.btn-brand:hover, .btn-brand:focus{
-    background-color: var(--color-brand2);
-    border-color: var(--color-base2);
-    color: #000000;
-}
-
-.link-custom{
-    font-weight: 700;
-    position: relative;
-}
-.link-custom::after{
-    content: "";
-    width: 0%;
-    height: 2px;
-    background-color: var(--color-brand2);
-    position: absolute;
-    left: 0;
-    top: 110%;
-    transition:  all 0.4s;
-}
-.link-custom:hover::after{
-    width: 100%;
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--color-brand2);
+  border-color: var(--color-base2);
+  color: #000000;
 }
 
+.link-custom {
+  font-weight: 700;
+  position: relative;
+}
+.link-custom::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-brand2);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+.link-custom:hover::after {
+  width: 100%;
+}
 
 /* CARD */
-.card-custom .card-custom-image{
+.card-custom .card-custom-image {
   overflow: hidden;
 }
-.card-custom .card-custom-image img{
+.card-custom .card-custom-image img {
   transition: all 1.4s ease;
 }
 
-.card-custom:hover .card-custom-image img{
+.card-custom:hover .card-custom-image img {
   transform: scale(1.1);
   transition: 0.5s ease;
 }
 
+/* review */
+.review.shadow-effect.bg-base.p-4.rounded-4 {
+  height: 100%;
+}
 /* CONTACTO / CONTACT */
 
 #contact .form-control:focus {
@@ -183,13 +193,13 @@ font-weight: 700;
 
 /*   IMG SECCION   */
 
-.section-custom-image{
+.section-custom-image {
   padding: 0;
   border: solid 2px blue;
   height: 30vh;
   display: flex;
 }
-.section-custom-image img{
+.section-custom-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -221,7 +231,7 @@ font-weight: 700;
   margin-bottom: 20px;
   width: 90%;
   color: #fff;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 3px;
   padding: 8px 10px;
   font-size: 13px;
@@ -237,11 +247,11 @@ font-weight: 700;
 }
 
 /*LYRIC SECTION */
-.letra{
-  position: relative; 
+.letra {
+  position: relative;
 }
 .letra::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -249,8 +259,8 @@ font-weight: 700;
   left: 0;
   background-image: url(../images/ME_NECESITO_background.PNG);
   background-size: cover;
-  opacity: 0.2; 
-  z-index: -1; 
+  opacity: 0.2;
+  z-index: -1;
 }
 /*//LYRIC SECTION */
 
@@ -258,12 +268,12 @@ font-weight: 700;
 /* SOCIAL ICONS */
 
 .social-icons a {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-base);
-    border-radius: 100px;
-    font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-base);
+  border-radius: 100px;
+  font-size: 24px;
 }
