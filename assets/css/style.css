@@ -17,8 +17,7 @@ body {
   font-family: var(--font-base), sans-serif;
   /* test */
   background-color: #0a0707;
-background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
 }
 
 h1,
@@ -30,12 +29,11 @@ h6 {
   color: var(--color-heading);
   font-weight: 700;
 }
-:not(.person) h5{
+:not(.person) h5 {
   color: var(--color-brand);
 }
 
-.person p{
-  
+.person p {
   color: var(--color-brand);
 }
 a {
