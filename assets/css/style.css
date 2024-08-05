@@ -36,6 +36,10 @@ h6 {
 .person p {
   color: var(--color-brand);
 }
+
+p{
+  font-size: 1.4rem;
+}
 a {
   text-decoration: none;
   color: var(--color-body);
@@ -43,7 +47,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-brand2);
+  color: var(--color-brand);
 }
 
 img {
@@ -100,14 +104,19 @@ img {
 .navbar .nav-link.active {
   color: #e16428;
 }
+
+#home h1 {
+  margin-top: 30px; /* Ajusta el valor según sea necesario */
+}
 /* ----------------- */
 
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
     width: var(--sidebar-width);
-    background: linear-gradient(#000000a5, #000000),
+    background: linear-gradient(#00000005, #00000000),
       url(../images/background.png);
+      /* background-image: linear-gradient(to bottom, #000000, #3c1a1f, #742c2e, #ad4332, #e16428); */
     background-size: cover;
     background-position: center;
   }
@@ -131,12 +140,14 @@ img {
 .btn-brand {
   background-color: var(--color-brand);
   border-color: var(--color-brand);
+  color: #fafafa;
 }
 .btn-brand:hover,
 .btn-brand:focus {
   background-color: var(--color-brand2);
   border-color: var(--color-base2);
-  color: #000000;
+  color: black;
+  transition: .3s ease-in-out;
 }
 
 .link-custom {
@@ -275,3 +286,5 @@ img {
   border-radius: 100px;
   font-size: 24px;
 }
+
+
