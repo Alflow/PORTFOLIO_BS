@@ -37,7 +37,7 @@ h6 {
   color: var(--color-brand);
 }
 
-p{
+p {
   font-size: 1.4rem;
 }
 a {
@@ -116,7 +116,7 @@ img {
     width: var(--sidebar-width);
     background: linear-gradient(#00000005, #00000000),
       url(../images/background.png);
-      /* background-image: linear-gradient(to bottom, #000000, #3c1a1f, #742c2e, #ad4332, #e16428); */
+    /* background-image: linear-gradient(to bottom, #000000, #3c1a1f, #742c2e, #ad4332, #e16428); */
     background-size: cover;
     background-position: center;
   }
@@ -147,7 +147,7 @@ img {
   background-color: var(--color-brand2);
   border-color: var(--color-base2);
   color: black;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .link-custom {
@@ -174,6 +174,8 @@ img {
 }
 .card-custom .card-custom-image img {
   transition: all 1.4s ease;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover;
 }
 
 .card-custom:hover .card-custom-image img {
@@ -198,6 +200,11 @@ img {
 
 #contact input.form-control {
   height: 44px;
+}
+
+#reviews .card-custom-image img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
 }
 
 /*   IMG SECCION   */
@@ -287,4 +294,6 @@ img {
   font-size: 24px;
 }
 
-
+.softr-back-to-top-button {
+  bottom: 21px;
+}
