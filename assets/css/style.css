@@ -295,5 +295,5 @@ img {
 }
 
 .softr-back-to-top-button {
-  bottom: 21px;
+  bottom: 21px !important;
 }
