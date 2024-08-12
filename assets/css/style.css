@@ -67,7 +67,6 @@ img {
   justify-content: center;
   padding-top: 80px;
   padding-bottom: 80px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.439);
 }
 
 .shadow-effect {
@@ -296,4 +295,21 @@ img {
 
 .softr-back-to-top-button {
   bottom: 21px !important;
+}
+
+.divider {
+  width: 100%;
+  position: relative; /* Necesario para que el pseudoelemento esté posicionado correctamente */
+  height: 0; /* No necesita altura */
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%; 
+  left: 10%;
+  width: 80%; 
+  height: 2px; 
+  background-color: rgba(128, 128, 128, 0.427); 
+  border-radius: 1px;
 }
