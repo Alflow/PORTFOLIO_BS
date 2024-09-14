@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfredo Alberruche</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" class="projects">
+
+    <!-- BARRA NAVEGACIÓN / NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">ALFREDO <br>ALBERRUCHE</span>
+                <img src="../assets//images/photo.png" class="d-none d-lg-block rounded-circle" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">Volver al inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#introduccion">Descripción del proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instrumental">Producción Instrumental</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#letra">Letra</a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- // BARRA NAVEGACIÓN / NAVIGATION BAR -->
+
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper" class="pt-4">
+        <div class="col-12">
+            <nav class="ps-4 fs-3">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active text-brand " id="nav-maquetacion-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-maquetacion" type="button" role="tab" aria-controls="nav-maquetacion"
+                        aria-selected="true">Maquetación</button>
+                    <button class="nav-link text-brand ms-2" id="nav-php-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-php" type="button" role="tab" aria-controls="nav-php"
+                        aria-selected="false">PHP</button>
+                    <button class="nav-link text-brand ms-2" id="nav-react-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-react" type="button" role="tab" aria-controls="nav-react"
+                        aria-selected="false">React</button>
+                </div>
+            </nav>
+        </div>
+
+        <section>
+            <div class="tab-content ps-4 pt-4" id="nav-tabContent">
+                <!-- Tab Maquetación -->
+                <div class="tab-pane fade show active " id="nav-maquetacion" role="tabpanel"
+                    aria-labelledby="nav-maquetacion-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card-custom rounded-4 bg-base shadow-effect h-100" data-aos="fade-up">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="../assets/images/ALFLOW_WEB.PNG" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4 class="text-brand">Página de Artista</h4>
+                                    <p> Primera Web realizada en el GS con css nativo en la que detallo los servicios
+                                        que he ofrecido a nivel creativo.</p>
+                                    <a href="https://alflow.github.io/" class="link-custom" target="_blank">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card-custom rounded-4 bg-base shadow-effect h-100" data-aos="fade-up"
+                                data-aos-delay="300">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="../assets/images/OASIS_WEB.PNG" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4 class="text-brand">OASIS TRAVELS</h4>
+                                    <p>Proyecto más avanzado en Diseño de Interfaces web a partir de un Wireframe &
+                                        mockup en Figma.</p>
+                                    <a href="https://github.com/Alflow/OASIS_TRIPS_BS_DIW" class="link-custom">Ver
+                                        más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Puedes añadir más tarjetas aquí -->
+                    </div>
+                </div>
+
+                <!-- Tab PHP -->
+                <div class="tab-pane fade" id="nav-php" role="tabpanel" aria-labelledby="nav-php-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card-custom rounded-4 bg-base shadow-effect h-100" data-aos="fade-up"
+                                data-aos-delay="300">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="../assets/images/screen1.PNG" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4 class="text-brand">APP de Fichajes en PHP + SQL SERVER</h4>
+                                    <p>Aplicación web sencilla para manejo de fichajes de empleados en entorno local.
+                                    </p>
+                                    <a href="https://github.com/Alflow/Empleados_PHP_MVC" class="link-custom">Ver
+                                        más</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Puedes añadir más tarjetas aquí -->
+                    </div>
+                </div>
+
+                <!-- Tab React -->
+                <div class="tab-pane fade" id="nav-react" role="tabpanel" aria-labelledby="nav-react-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card-custom rounded-4 bg-base shadow-effect h-100" data-aos="fade-up"
+                                data-aos-delay="300">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="assets/images/react_project.png" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4 class="text-brand">Proyecto React Ejemplo</h4>
+                                    <p>Descripción breve de un proyecto hecho con React.</p>
+                                    <a href="#" class="link-custom">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Puedes añadir más tarjetas aquí -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script> configObj = { "buttonD": "M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z", "buttonT": "translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)", "shadowSize": "none", "roundnessSize": "12px", "buttonDToBottom": "32px", "buttonDToRight": "32px", "selectedBackgroundColor": "#e16428", "selectedIconColor": "#ffffff", "buttonWidth": "40px", "buttonHeight": "40px", "svgWidth": "32px", "svgHeight": "32px" }; function createButton(obj, pageSimulator) { const body = document.querySelector("body"); backToTopButton = document.createElement("span"); backToTopButton.classList.add("softr-back-to-top-button"); backToTopButton.id = "softr-back-to-top-button"; pageSimulator ? pageSimulator.appendChild(backToTopButton) : body.appendChild(backToTopButton); backToTopButton.style.width = obj.buttonWidth; backToTopButton.style.height = obj.buttonHeight; backToTopButton.style.marginRight = obj.buttonDToRight; backToTopButton.style.marginBottom = obj.buttonDToBottom; backToTopButton.style.borderRadius = obj.roundnessSize; backToTopButton.style.boxShadow = obj.shadowSize; backToTopButton.style.color = obj.selectedBackgroundColor; backToTopButton.style.backgroundColor = obj.selectedBackgroundColor; pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed"; backToTopButton.style.outline = "none"; backToTopButton.style.bottom = "0px"; backToTopButton.style.right = "0px"; backToTopButton.style.cursor = "pointer"; backToTopButton.style.textAlign = "center"; backToTopButton.style.border = "solid 2px currentColor"; backToTopButton.innerHTML = '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>'; backToTopButtonSvg = document.querySelector(".back-to-top-button-svg"); backToTopButtonSvg.style.verticalAlign = "middle"; backToTopButtonSvg.style.margin = "auto"; backToTopButtonSvg.style.justifyContent = "center"; backToTopButtonSvg.style.width = obj.svgWidth; backToTopButtonSvg.style.height = obj.svgHeight; backToTopButton.appendChild(backToTopButtonSvg); backToTopButtonImg = document.querySelector(".back-to-top-button-img"); backToTopButtonImg.style.fill = obj.selectedIconColor; backToTopButtonSvg.appendChild(backToTopButtonImg); backToTopButtonImg.setAttribute("d", obj.buttonD); backToTopButtonImg.setAttribute("transform", obj.buttonT); if (!pageSimulator) { backToTopButton.style.display = "none"; window.onscroll = function () { if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { backToTopButton.style.display = "block"; } else { backToTopButton.style.display = "none"; } }; backToTopButton.onclick = function () { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }; } }; document.addEventListener("DOMContentLoaded", function () { createButton(configObj, null); });</script>
+
+</body>
+
+</html>
